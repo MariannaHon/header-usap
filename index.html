@@ -2,84 +2,297 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/header-usap/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>USAP_Header</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/header-usap/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/header-usap/assets/vendor-3104a0c6.js">
+    <link rel="stylesheet" href="/header-usap/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/header-usap/assets/index-03ab7555.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+  <div class="container">
+    <ul class="contacts">
+      <li class="contacts-item street">
+        <svg class="icons location">
+          <use href="/header-usap/assets/icons-fb44c72d.svg#icon-location"></use>
+        </svg>
+        <p class="text">м. Київ, вул. Антоновича 34</p>
       </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <li class="contacts-item">
+        <svg class="icons mail">
+          <use href="/header-usap/assets/icons-fb44c72d.svg#icon-mail"></use>
+        </svg>
+        <p class="text">info@usap.ua</p>
+      </li>
+      <li class="contacts-item">
+        <svg class="icons">
+          <use href="/header-usap/assets/icons-fb44c72d.svg#icon-phone"></use>
+        </svg>
+        <p class="text">(067) 480-46-84</p>
       </li>
     </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <nav class="nav-top">
+      <ul class="header-list">
+        <li class="text">
+          <a class="nav-link" href="">Контакти</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="text">
+          <a class="nav-link" href="">Про компанію</a>
+        </li>
+        <li class="text">
+          <a class="nav-link" href="">Блог</a>
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    </nav>
+  </div>
+  <div class="wrapper">
+    <svg class="logo">
+      <use href="/header-usap/assets/icons-fb44c72d.svg#icon-logo"></use>
+    </svg>
+    <nav class="nav">
+      <ul class="list">
+        <li class="special">
+          <div class="item">
+            <a class="link" href="">Дослідження</a>
+            <button type="button" id="btn-research" class="svg-btn">
+              <svg class="icon-arrow">
+                <use href="/header-usap/assets/icons-fb44c72d.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-research">
+            <ul class="list-research">
+              <li class="item-research">
+                <a href="">ГМО</a>
+              </li>
+              <li class="item-research">
+                <a href="">Олійні</a>
+              </li>
+              <li class="item-research">
+                <a href="">Зернові</a>
+              </li>
+              <li class="item-research">
+                <a href="">Паливо</a>
+              </li>
+              <li class="item-research-special">
+                <a href="">Всі дослідження</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="special">
+          <div class="item">
+            <a class="link" href="">Консалтинг</a>
+            <button type="button" id="btn-consult" class="svg-btn">
+              <svg class="icon-arrow">
+                <use href="/header-usap/assets/icons-fb44c72d.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-consult">
+            <table class="header-table">
+              <thead >
+                <tr>
+                  <td class="header-thead-title">Розробка систем</td>
+                  <td class="header-thead-title">Сертифікація продукції</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="header-tbody-text">ISO 22000</td>
+                  <td class="header-tbody-text">Миючі засоби</td>
+                </tr>
+                <tr>
+                  <td class="header-tbody-text">ISO 27001</td>
+                  <td class="header-tbody-text">Харчові продукти</td>
+                </tr>
+                <tr>
+                  <td class="header-tbody-text">ISO 15189</td>
+                  <td class="header-tbody-text">Іграшки</td>
+                </tr>
+                <tr>
+                  <td class="header-tbody-text">ISO 15189</td>
+                  <td class="header-tbody-text">Сертифікат відповідності</td>
+                </tr>
+                <tr>
+                  <td class="special-td">Всі системи</td>
+                  <td class="special-td">Всі системи</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="item">
+          <a class="link" href="">Сертифікація</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">Навчання</a>
+        </li>
+        <li class="item">
+          <a class="link" href="">Наші клієнти</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-wrapper">
+      <div class="search-container">
+        <input class="input" type="text" placeholder="Пошук">
+        <button type="button" id="search-btn" class="search-btn">
+          <svg class="icon-search">
+            <use href="/header-usap/assets/icons-fb44c72d.svg#icon-search"></use>
+          </svg>
+        </button>
+      </div>
+      <button type="button" id="btn-menu" class="svg-btn">
+        <svg class="icon-menu">
+          <use href="/header-usap/assets/icons-fb44c72d.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="btn" type="button">UA</button>
     </div>
   </div>
-</section>
+  <div class="modal">
+    <div class="modal-top">
+      <button class="btn-modal" type="button">UA</button>
+      <button type="button" id="btn-close" class="svg-btn">
+        <svg class="icon-close">
+          <use href="/header-usap/assets/icons-fb44c72d.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-modal">
+      <ul class="modal-list">
+        <li>
+          <div>
+            <a class="modal-link" href="">Дослідження</a>
+            <button type="button" id="modal-btn-research" class="header-modal-btn-research">
+              <svg class="icon-arrow">
+                <use href="/header-usap/assets/icons-fb44c72d.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div>
+          <div class="dark-modal-research">
+            <ul class="dark-list-research">
+              <li class="dark-item-research">
+                <a href="">ГМО</a>
+              </li>
+              <li class="dark-item-research">
+                <a href="">Олійні</a>
+              </li>
+              <li class="dark-item-research">
+                <a href="">Зернові</a>
+              </li>
+              <li class="dark-item-research">
+                <a href="">Паливо</a>
+              </li>
+              <li class="dark-item-research-special">
+                <a href="">Всі дослідження</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </li>
+        <li class="modal-consult-container">
+          <div class="modal-item">
+            <a class="modal-link" href="">Консалтинг</a>
+            <button type="button" id="modal-btn-consult" class="header-modal-btn-research">
+              <svg class="icon-arrow">
+                <use href="/header-usap/assets/icons-fb44c72d.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="dark-modal-consult">
+            <ul class="systems-list">
+              <li class="dark-system-item-title">
+                <a href="">Розробка систем</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">ISO 22000</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">ISO 27001</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">ISO 15189</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">ISO 15189</a>
+              </li>
+              <li class="dark-item-research-special">
+                <a href="">Всі системи</a>
+              </li>
+            </ul>
+            <ul class="systems-list certificate">
+              <li class="dark-system-item-title">
+                <a href="">Сертифікація продукції</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">Миючі засоби</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">Харчові продукти</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">Іграшки</a>
+              </li>
+              <li class="dark-system-item">
+                <a href="">Сертифікат відповідності</a>
+              </li>
+              <li class="dark-item-research-special">
+                <a href="">Всі системи</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Сертифікація</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Про компанію</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Блог</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Контакти</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Навчання</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="">Наші клієнти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
+<!-- Для перевірки пошуку -->
 
+<!-- Це дані для перевірки
+
+const data = [
+  { id: 1, content: "This is the first item" },
+  { id: 2, content: "This is the second item" },
+  { id: 3, content: "This is another item" },
+  { id: 1, content: "cat" },
+  { id: 2, content: "dog" },
+  { id: 3, content: "mouse" }
+]; -->
+
+<main>
+  <div id="searchResults">
+
+  </div>
+</main>
     
   </body>
 </html>
